@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta | EduMatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="login.html"><span class="logo">EM</span>EduMatch</a>
+  </header>
+
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h1>Crear cuenta</h1>
+      <p class="subtitulo">Completa tus datos para empezar a postularte a becas, cursos e intercambios.</p>
+
+      <form action="#" method="post">
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Nombres" autocomplete="given-name" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" autocomplete="family-name" required>
+
+        <label for="cedula">Número de cédula</label>
+        <input type="text" id="cedula" name="cedula" placeholder="Ej: 1234567890" inputmode="numeric" pattern="[0-9]{6,12}" title="Escribe solo números (entre 6 y 12 dígitos)" required>
+
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento" autocomplete="bday" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" autocomplete="email" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Crea una contraseña" autocomplete="new-password" minlength="8" required>
+
+        <button type="submit" class="boton">Registrarme</button>
+      </form>
+
+      <p class="enlace-pie">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+    </section>
+  </main>
+</body>
+</html>
